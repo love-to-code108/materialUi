@@ -11,6 +11,8 @@ import { ProductsPage } from "./pages/ProductsPage"
 import { Freatures } from "./components/Freatures"
 import { New } from "./components/New"
 import { Users } from "./components/Users"
+import { UserDetails } from "./components/UserDetails"
+import { Admin } from "./components/Admin"
 
 function App() {
 
@@ -36,6 +38,8 @@ function App() {
 
         {/* DYNAMIC ROUTES */}
         <Route path="/users/:userId" element={<UserDetails/>} />
+        {/* ADMIN ROUTE */}
+        <Route path="/users/admin" element={<Admin/>} />
       </Routes>
     </div>
   )
