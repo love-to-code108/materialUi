@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom"
 export const Users = () => {
 
   const [params, setParams] = useSearchParams();
-  const statusOfUser = params.get("filter") === "active website";
+  const statusOfUser = params.get("filter") === "active";
   console.log(statusOfUser);
 
   return (
@@ -13,7 +13,7 @@ export const Users = () => {
       <h2>User 3</h2>
 
       <div>
-        <button onClick={() => setParams({ filter: "active" , tecxaro:"website" })}>Active users</button>
+        <button onClick={() => setParams({ filter: "active" })}>Active users</button>
         <button onClick={() => setParams({})}>Reset Filter</button>
       </div>
 
