@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink,Link } from "react-router-dom"
 
 import "../App.css"
 export const Navbar = () => {
@@ -9,6 +9,7 @@ export const Navbar = () => {
             <NavLink to="/orderSummary">Order Summary</NavLink>
             <NavLink to="/products">Products</NavLink>
             <NavLink to="/users">Users</NavLink>
+            <Link to="/">Home Using Link</Link>
         </nav>
 
     )
